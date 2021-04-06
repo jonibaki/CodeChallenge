@@ -1,9 +1,12 @@
 package javaexe;
 
+import java.util.Arrays;
+
 import static javaexe.exercise1.exerciseOne.sockMerchant;
 import static javaexe.exercise3.ex3.jumpingOnClouds;
 import static javaexe.exercise4.ex4.repeatedString;
 import static javaexe.exercise5.ex5.hourglassSum;
+import static javaexe.exercise6.ex6.rotLeft;
 
 public class Main {
     public static void main (String []args){
@@ -16,8 +19,10 @@ public class Main {
 //        System.out.println("Total pair "+ sockMerchant(9, ar));
 //       System.out.println("Min jumps "+ jumpingOnClouds(exThree));
 //        System.out.println(repeatedString( s, n));
-        int [][] test = {{-9, -34, -9, 12,1,4},{-10, 0, 2,8, 2,3},{-2,7, -1,1, -2, 10},{9,  1,7, 2,5, 18},{9,  1,7, 2,5, 18},{9,  1,7, 2,5, 18}};
-        hourglassSum(test);
+//        int [][] test = {{-9, -34, -9, 12,1,4},{-10, 0, 2,8, 2,3},{-2,7, -1,1, -2, 10},{9,  1,7, 2,5, 18},{9,  1,7, 2,5, 18},{9,  1,7, 2,5, 18}};
+//        hourglassSum(test);
+        int [] arr = {1,2,3,4,5};
+        System.out.println(rotLeft(arr,4));
 
     }
 }
