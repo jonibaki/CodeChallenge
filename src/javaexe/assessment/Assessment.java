@@ -22,7 +22,7 @@
             while(!end.equals("quit")){
                 System.out.println("Please enter starting time");
                 String start_time = reader.readLine();
-                parking.is_valid_parking_time(start_time);
+//                parking.is_valid_parking_time(start_time);
                 System.out.println("Time in : "+start_time);
 
                 System.out.println("Please enter ending time");
@@ -57,8 +57,6 @@
             }
 
         }
-
-        //can't be asked to do this func
         private boolean is_valid_parking_time(String t){
             boolean operator = t.contains(":");
     //        int i =Arrays.asList(t).stream().filter(x->x.equals(":")).count();
@@ -125,13 +123,13 @@
             try {
                 parking_start = format.parse(time_start);
             } catch (ParseException e) {
-                e.printStackTrace();
+                System.out.println(e.getMessage());
             }
             Date parking_end = null;
             try {
                 parking_end = format.parse(time_end);
             } catch (ParseException e) {
-                e.printStackTrace();
+                System.out.println(e.getMessage());
             }
 
             long duration = 0;
