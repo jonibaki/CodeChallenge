@@ -19,11 +19,17 @@ public class ExerciseTwo {
             searchTree.insert(node_values.get(i));
         }
 
+
+
         // Loop through each branch until there is node or null
         // calculate each node and store the value in a list
         //return the max value
-        return 0;
+//        int result = searchTree.preOrderSearch();
+//        return result;
+        return searchTree.preOrderSearch();
+
     }
+
 
 }
 class LinkedList{
@@ -66,9 +72,14 @@ class LinkedList{
             return 0;
         }
         total +=preOrderSearch(node.left);
+        System.out.println(node.left);
         total +=preOrderSearch(node.right);
+        System.out.println(node.right);
 
         return total;
+    }
+    public int preOrderSearch(){
+        return preOrderSearch(root);
     }
 }
 class Node<Integer>{
