@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class ExerciseThree {    public static void calcMissing(List<String> readings) {
+public class ExerciseThree {
+    public static void calcMissing(List<String> readings) {
     List<Float> missingDataSet = new ArrayList<>();
     int numOfRows = 0;
     for (int i = 0; i < readings.size(); i++) {
